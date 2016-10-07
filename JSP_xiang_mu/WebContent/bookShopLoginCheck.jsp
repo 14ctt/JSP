@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
+﻿<%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -9,7 +9,7 @@
 <body>
 <jsp:useBean id="user" scope="page" class="useBean.UserInfoBean"/>
 <jsp:setProperty name="user" property="*"/>
-<%if(user.getUserName().equals(null)||user.getPassword().equals(null)){ %>
+<%if(user.getUserName()==null||user.getPassword()==null){ %>
 <jsp:forward page="bookShopLogin.jsp"/>
 <%
 }
