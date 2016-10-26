@@ -40,14 +40,14 @@
 	
 	<%
 	session.setAttribute("e", "信息更新成功！");
-	response.sendRedirect("xuanxuehao.jsp");
+	response.sendRedirect("index.jsp");
 		} else {
 	%>
 	信息更新失败！
 	
 	<%
 	session.setAttribute("e", "信息更新失败！");
-	response.sendRedirect("xuanxuehao.jsp");
+	response.sendRedirect("index.jsp");
 		}
 	%>
 </body>
